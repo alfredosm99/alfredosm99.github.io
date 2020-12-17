@@ -1,0 +1,47 @@
+---
+title: "conjuntos pldrm"
+author: Saucedo Maldonado Alfredo, Márquez Monjaraz Alejandro, Guzmán García Joshua
+  Bladimir
+date: "17/12/2020"
+output: html_document
+---
+## 1. Unión e intersección de conjuntos
+
+Creando el vector `mma` en R:
+```{r}
+mma<-1:25
+mma
+```
+
+Creando el vector `ggj` en R:
+```{r}
+ggj<-20:35
+ggj
+```
+
+Uniendo los vectores `mma` y `ggj` con la función `union`:
+```{r}
+a<-union(mma,ggj)
+a
+```
+Intesectando los vectores `mma` y `ggj` con la función `intersect`:
+```{r}
+b<-intersect(mma,ggj)
+b
+```
+Para saber que elementos aparecen en `mma` y no en `ggj` hayamos la diferencia usando la función `setdiff`:
+```{r}
+c<-setdiff(mma,ggj)
+c
+```
+Para saber que elementos aparecen en `ggj` y no en `mma` hayamos la diferencia usando la función `setdiff`:
+```{r}
+d<-setdiff(ggj,mma)
+d
+```
+Para saber si los vectores `mma`y `ggj` son iguales hay que utilizar la función `setequal`
+```{r}
+e<-setequal(mma,ggj)
+e
+```
+
